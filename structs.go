@@ -1032,6 +1032,7 @@ type UserGuildSettingsChannelOverride struct {
 // A UserGuildSettings stores data for a users guild settings.
 type UserGuildSettings struct {
 	SupressEveryone      bool                                `json:"suppress_everyone"`
+	SupressRoles	      bool                                `json:"suppress_roles"`
 	Muted                bool                                `json:"muted"`
 	MobilePush           bool                                `json:"mobile_push"`
 	MessageNotifications int                                 `json:"message_notifications"`
@@ -1042,6 +1043,7 @@ type UserGuildSettings struct {
 // A UserGuildSettingsEdit stores data for editing UserGuildSettings
 type UserGuildSettingsEdit struct {
 	SupressEveryone      bool                                         `json:"suppress_everyone"`
+	SupressRoles	      bool                                `json:"suppress_roles"`
 	Muted                bool                                         `json:"muted"`
 	MobilePush           bool                                         `json:"mobile_push"`
 	MessageNotifications int                                          `json:"message_notifications"`
